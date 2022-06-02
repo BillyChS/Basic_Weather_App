@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;400;700&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: 'Poppins',sans-serif !important;
+    background-image: url('../img/clouds.jpg');
+    background-repeat: no-repeat;
+    overflow: auto;
+    background-size:cover;
+}
+
+.others{
+    background-color: rgba(167, 222, 253,0.4);
+}
+.future-forecast{
+    background-color: rgba(5, 76, 128, 0.8);
+    padding: 25px;
+    bottom: 0;
+    color: white;
+    width: 100%;
+    
+}
+
+.future-forecast .today .day{
+    background-color: rgba(3, 49, 82, 0.9);
+}
+
+.weather-forecast .weather-forecast-item{
+    flex-direction: column;
+    margin: 0 10px;
+    width: 25vh;
+}
+
+.weather-forecast-item .day{
+    background-color: rgba(3, 49, 82, 0.9);
+}
+.weather-forecast-item .other .day{
+    background-color: rgba(3, 49, 82, 0.9);
+    width: 125px;
+
+}
+
+
+
+@media only screen and (min-width:430px) {
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: auto;
+    }
+}
+@media only screen and (max-width:430px){
+    .future-forecast{
+        justify-content: start;
+        align-items: none;
+        overflow-y: auto;
+    }
+}
